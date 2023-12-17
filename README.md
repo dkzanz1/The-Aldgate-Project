@@ -8,7 +8,10 @@ Dependancies
 "name": "codespaces-react",
 Babel 
 JSX
-
+*************************************************************
+Note self with regards to github source control updates:-
+To update github add message in message box and press commit then sync.
+*************************************************************
 
 # GitHub Codespaces ♥️ React
 

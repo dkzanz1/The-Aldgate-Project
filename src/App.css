@@ -12,30 +12,41 @@
 } */
 /* header styles*/
 .App-header { 
-  background-color: #cdd0d5;
+  background-color: #f3f3f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(5, 5, 5);
+}
+.App-NaviBar { 
+  background-color: #13131e;
+  min-height: 10vh;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(225, 221, 221);
 }
 .crumb {
   display: inline-block;
   margin: 20px;
   padding: 0 20px 0 20px;
+  
  
 }
 .container {
-  background-color: #db9575;
+  background-color: #fdfbfa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(16, 15, 15);
 }
 .section {
   background-color: #fff;
@@ -45,7 +56,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 
 }
 

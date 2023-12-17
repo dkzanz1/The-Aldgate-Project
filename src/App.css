@@ -70,6 +70,24 @@ li a {
   justify-content: center;
   font-size: calc(10px + 2vmin);
 } */
+/* Create a flex container for the photo grid */
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow the items to wrap to the next line if there's not enough space */
+}
+/* Apply a faded border to the photo */
+.photo-container .App-picture {
+  display: block;
+  width: 100%; /* Make the image fill its container */
+  height: auto; /* Maintain aspect ratio */
+  border: 10px solid rgba(255, 255, 255, 0.5); /* Set the border color with transparency for the faded effect */
+  transition: border-color 0.3s ease; /* Add a smooth transition effect for the border color */
+}
+
+/* Add a hover effect to change the border color on mouseover */
+.App-picture:hover img {
+  border-color: rgba(255, 255, 255, 0.2); /* Adjust the border color on hover */
+}
 .App-picture {
   min-height: 100vh;
   display: flex;

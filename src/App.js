@@ -21,25 +21,27 @@ function App() {
       </header>
       <div className="container">
 
-        <section>
+        <section className="photo-grid">
           <h1>next section 1</h1>
+          <div className="photo-container">
           <img src="../images/building-in-london.jpeg" className="App-picture" alt="" />
+          </div>
           <TextMaker />
         </section>
 
-        <section>
+        <section className="photo-grid">
           <h1>next section 2</h1>
           <TextMaker />
           <img src="../images/pexels-photo-1106476.jpeg" className="App-picture" alt="" />" 
         </section>
 
-        <section>
+        <section className="photo-grid">
           <h1>next section 3</h1>
           <TextMaker />
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
         </section>
        
-        <section>
+        <section className="photo-grid">
           <h1>next section 4</h1>
           <TextMaker />
           <img src="../images/pexels-photo-5582597.jpeg" className="App-picture" alt="" />

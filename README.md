@@ -1,3 +1,15 @@
+Project created using github generated codespace
+Its a react project using the following intended Tech:-
+
+1/M.E.R.N Stack Mongo,Express,React,Node.
+Dependancies 
+"react": "^18.2.0",
+"lorem-ipsum": "^2.0.8",currently install but not used.
+"name": "codespaces-react",
+Babel 
+JSX
+
+
 # GitHub Codespaces ♥️ React
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.

@@ -1,7 +1,11 @@
 /* resets default browser styles */
+* {
+  box-sizing: border-box;
+}
 body,h1,p {
    margin:0;
    padding: 0;
+  
   }
 
 body {

@@ -15,10 +15,9 @@ body {
     'Cantarell',
     'Fira Sans', 
     'Droid Sans', 
- 
     sans-serif;
-    background-color: #0c0000;
-    color: #fff;
+    /* background-color: #d7cccc;
+    color: #d11b1b; */
     /* remove webkit when not required */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

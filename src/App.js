@@ -20,24 +20,33 @@ function App() {
         </p>
       </header>
       <div className="container">
+
         <section>
-          <h1>next section</h1>
+          <h1>next section 1</h1>
           <img src="../images/building-in-london.jpeg" className="App-picture" alt="" />
           <TextMaker />
         </section>
+
         <section>
-          <h1>next section</h1>
+          <h1>next section 2</h1>
           <TextMaker />
           <img src="../images/pexels-photo-1106476.jpeg" className="App-picture" alt="" />" 
         </section>
+
         <section>
-          <h1>next section</h1>
+          <h1>next section 3</h1>
           <TextMaker />
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
         </section>
-        <TextMaker />
-        <footer className="crumbs">
-        <li className="crumb"><a href="/">Twitter</a></li>
+       
+        <section>
+          <h1>next section 4</h1>
+          <TextMaker />
+          <img src="../images/pexels-photo-5582597.jpeg" className="App-picture" alt="" />
+        </section>
+
+        <footer className="Media-crumbs">
+            <li className="crumb"><a href="/">Twitter</a></li>
             <li className="crumb"><a href="/">Facebook</a></li>
             <li className="crumb"><a href="/">Tinder</a></li>
         <h3>Copycat 2023</h3>

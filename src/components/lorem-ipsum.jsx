@@ -1,11 +1,10 @@
 import React from "react";
 
-
-
 function TextMaker () {
     return <>
-    <div>
-       <p>Lorem ipsum dolor sit amet,
+    <div classname="text">
+       <p>
+        Lorem ipsum dolor sit amet,
         Donec lobortis nisl tellus, 
         ut tristique lectus sodales a.
         Aenean eu neque nec purus feugiat posuere.
@@ -13,11 +12,13 @@ function TextMaker () {
         , elementum lacinia ipsum. In tempus tortor 
         orci, ultrices ornare nibh lobortis sit amet. 
         Donec vehicula leo at porta rutrum. Maecenas 
-        vitae ex est. Donec gravida turpis vel pulvinar cursus. Phasellus et vulputate nunc. Vivamus vulputate enim nec mi sagittis, id facilisis nulla consectetur.
+        vitae ex est. Donec gravida turpis vel 
+        pulvinar cursus. Phasellus et vulputate nunc.
+        Vivamus vulputate enim nec mi sagittis, 
+        id facilisis nulla consectetur.
         </p>
     </div>
-    
-    </>
+</>
 }
 
 

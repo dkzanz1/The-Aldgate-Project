@@ -22,7 +22,7 @@ function App() {
       <div className="container">
 
         <section className="photo-grid">
-          <h1>next section 1</h1>
+          <h2>next section 1</h2>
           <div className="photo-container">
           <img src="../images/building-in-london.jpeg" className="App-picture" alt="" />
           </div>

@@ -2,9 +2,18 @@
 * {
   box-sizing: border-box;
 }
-body,h1,p {
+/* Replace with your desired primary color code */
+:root {
+  --primary-color-1:black;
+  --primary-color-2:rgb(251, 248, 248);
+}
+
+body,h2,p {
    margin:0;
    padding: 0;
+   /* Sets background and text color */
+   background-color: var(--primary-color-1);
+   color:var(--primary-color-2);
   
   }
 

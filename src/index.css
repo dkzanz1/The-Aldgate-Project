@@ -4,9 +4,9 @@
 }
 /* Replace with your desired primary color code */
 :root {
-  --primary-color-1:rgb(14, 10, 10);
-  --primary-color-2:rgb(251, 248, 248);
-  --primary-color-3: #9e89b8;
+  --primary-color-1:rgb(238, 230, 239);
+  --primary-color-2:rgb(11, 12, 10);
+  --primary-color-3: #39353e;
 }
 body {
   /* support for internet explorer work around */
@@ -35,7 +35,7 @@ body,h2,p {
    padding: 0;
    /* Sets background and text color */
    background-color: var(--primary-color-1);
-   color:var(--primary-color-2);
+   color:var(--primary-color-3);
   }
 
 

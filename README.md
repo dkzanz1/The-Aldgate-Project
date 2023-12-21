@@ -8,6 +8,8 @@ Dependancies
 "name": "codespaces-react",
 Babel 
 JSX
+p
+Principle Layout based on CSS flex-box
 *************************************************************
 Note self with regards to github source control updates:-
 To update github add message in message box and press commit then sync.

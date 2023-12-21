@@ -23,9 +23,13 @@
 
 }
 .App-NaviBar-crumbs { 
-  background-color: #040e0c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items : center;
+  /* background-color: var(--primary-color-1);
   width: 100%;
-  margin-top:10px;
+  margin-top:10px; */
   
   /* min-height: 10vh; */
   /* display: flex; */
@@ -33,6 +37,23 @@
   font-size: calc(10px + 2vmin);
 
 }
+.App-NaviBar-crumbs ul {
+
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+@media screen and (min-width: 550px) {
+  .App-NaviBar-crumbs ul {
+    width: auto;
+    margin-top: 0;
+  }
+  .App-NaviBar-crumbs .make-contact-btn {
+    order: 1;
+  }
+}
+
 .App-NaviBar-crumbs .crumb {
   display: inline-block;
   margin: 10px;
@@ -46,58 +67,49 @@
 }
 /* color for nav-link & medai-links  */
 li a {
-  color:rgb(19, 69, 220);
+  color:rgb(19, 220, 26);
  
 }
-
-
-.container {
-  /* background-color: #fdfbfa;
-  color: rgb(230, 36, 36); */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 1vmin);
-
-}
-/* .section {
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-} */
-/* Create a flex container for the photo grid */
-.photo-grid {
-  display: flex;
-  flex-wrap: wrap; /* Allow the items to wrap to the next line if there's not enough space */
-}
-/* Apply a faded border to the photo */
-.photo-container .App-picture {
-  display: block;
-  width: 100%; /* Make the image fill its container */
-  height: auto; /* Maintain aspect ratio */
-  border: 10px solid rgba(255, 255, 255, 0.5); /* Set the border color with transparency for the faded effect */
-  transition: border-color 0.3s ease; /* Add a smooth transition effect for the border color */
-}
-
-/* Add a hover effect to change the border color on mouseover */
-.App-picture:hover img {
-  border-color: rgba(255, 255, 255, 0.2); /* Adjust the border color on hover */
-}
-.App-picture {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: row;
-
-}
-
 .heart {
   color: #ff0000;
 }
 .small {
   font-size: 0.75rem;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+
+
+}
+.page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+.page-main section {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+}
+.page-main img {
+width:100%;
+height:auto;
+}
+
+@media screen and (min-width: 768px){
+  main-page {
+  padding: 90px;
+}
 }

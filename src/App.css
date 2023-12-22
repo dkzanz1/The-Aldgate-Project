@@ -1,56 +1,52 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+.App-header { 
+  display: flex;
+  flex-direction: column;
+    font-size: calc(10px + 1vmin);
 }
 
 .App-logo {
-  height: 5vmin;
-  pointer-events: none;
+  height: 8vmin;
 }
+/* logo css flexbox */
+/* .box-logo div {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+} */
+/* .box-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+} */
+/* logo fin */
+
 /* .App-logo-video {
   height: 10vmin;
   pointer-events: none;
 } */
 /* header styles*/
-.App-header { 
-  /* background-color: #f3f3f5; */
-  color: rgb(232, 82, 7);
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 
-}
-.App-NaviBar-crumbs { 
+.App-NaviBar-crumbs ul { 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items : center;
-  /* background-color: var(--primary-color-1);
-  width: 100%;
-  margin-top:10px; */
-  
-  /* min-height: 10vh; */
-  /* display: flex; */
-  /* flex-direction: column; */
   font-size: calc(10px + 1.5vmin);
-
 }
-.App-NaviBar-crumbs ul {
-
-  display: flex;
-  order: 1;
-  width: 100%;
-  margin-top: 15px;
+.App-NaviBar-crumbs li a { 
+  text-decoration: none;
 }
+
 @media screen and (min-width: 550px) {
   .App-NaviBar-crumbs ul {
     width: auto;
     margin-top: 0;
   }
+  
   .App-NaviBar-crumbs .make-contact-btn {
-    order: 1;
+       margin-left: auto;
   }
 }
 
@@ -102,18 +98,22 @@ li a {
   align-items: center;
   justify-content: center;
   min-height: 350px;
+  margin: 20px;
+  padding: 20px;
 }
 .page-main img {
-width:100%;
-height:auto;
+width:80%;
+height:600px;
 }
 .photo-gallery img {
 background-size : cover;
 }
 .photo-gallery img {
-  width:300px;
-  height:450px;
-  display:inline-flexbox;
+  width:100%;
+  height: 300px;
+  display: inline-flexbox;
+  margin : 5px;
+  padding: 15px;
 }
 
 .photo-gallery li {

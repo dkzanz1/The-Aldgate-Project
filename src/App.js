@@ -1,26 +1,28 @@
 import './App.css';
 // import video from "./videos";
+import Logo from './components/logo';
 import NaviBar from './components/nav-bar';
 import TextMaker from './components/lorem-ipsum';
-
+import Gallery from './components/gallery';
+import Footer from './components/footer';
 function App() {
   return (
     <div className="container">
     <div className="App">
+     <Logo />
       <header className="App-header">
       <NaviBar /> 
-        {/* <h1>ALGATE FIRE</h1> */}
-       
         {/* need to add video mp4 from linux computer */}
         {/* <video autoPlay muted loop className='App-logo-video'>
           <source src ={process.env.PUBLIC_URL + '/home/paulzolik/react-projects/Algatelogovideo.mp4/Algate.mp4'} type="video/mp4" />
           Your browser does not support the video tag
         </video> */}
-        <p>
-          First choice!<br></br>The only choice <span className="heart">♥️</span> ALGATE
-        </p>
       </header>
+      
      <main className="page-main">
+     <p>
+          First choice!<br></br>The only choice <span className="heart">♥️</span> ALGATE
+      </p>
       <div>
         <section className="photo-grid">
           <h2>next section 1</h2>
@@ -40,15 +42,10 @@ function App() {
           <TextMaker />
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
         </section>
-
+        <Gallery />
         <section className="photo-gallery">
-          <h2>Gallery 1</h2>
           <div>
-            <ul>
-              <li><img src="../images/pexels-photo-1502941 (1).jpeg" className="App-picture" alt="" /></li>
-              <li><img src="../images/pexels-photo-1502941 (1).jpeg" className="App-picture" alt="" /></li>
-              <li><img src="../images/pexels-photo-1502941 (1).jpeg" className="App-picture" alt="" /></li>
-            </ul>
+           <h2>Something spare</h2>
            </div>
         </section>
 
@@ -60,15 +57,11 @@ function App() {
         </div>
       </main>
       {/* contact form  */}
-        <footer className="Media-crumbs">
-            <li className="crumb"><a href="/">Twitter</a></li>
-            <li className="crumb"><a href="/">Facebook</a></li>
-            <li className="crumb"><a href="/">Tinder</a></li>
-        <h3>Copycat 2023</h3>
-        <h4>Call us direct <a href="tel:+44 123-456-789">123-456-789</a></h4>
-        {/* <h4>email us on <a href="mailto: [a.person@somewhere.co.uk]?su" alt="email"></a></h4> */}
-        </footer>
-      </div>     
+      
+      </div> 
+      <footer>
+      <Footer />  
+      </footer>
       {/* container ends*/}
       </div>
   );

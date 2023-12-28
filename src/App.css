@@ -1,15 +1,31 @@
 .App {
-  text-align: left;
+  text-align: center;
+  box-sizing: border-box;
 }
 .App-header { 
   display: flex;
   flex-direction: column;
-    font-size: calc(10px + 1vmin);
+  font-size: calc(30px + 1vmin);
 }
-
+div .App-box-logo {
+  text-align: left;
+  background-color: rgb(210, 189, 189);
+}
 .App-logo {
   height: 8vmin;
+  margin-top:2px;
+  margin-left: 2px;
+  margin-right:4px;
+  padding: 2px;
 }
+.App-logo h3 {
+  color: blue;
+}
+
+/* .App-picture {
+  margin: 0px;
+  padding : 10px;
+} */
 /* logo css flexbox */
 /* .box-logo div {
   width: 100%;
@@ -39,6 +55,31 @@
   text-decoration: none;
 }
 
+/* .Media-crumbs {
+  height: 10vh;
+  display: grid;
+  align-items: center;
+} */
+.Media-crumbs .crumb a {
+  display: flex;
+  flex-direction: wrap;
+  font-size: calc(10px + 1.5vmin);
+  /* align-items: center;
+  jusitfy-content: center; */
+}
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 550px) {
   .App-NaviBar-crumbs ul {
     width: auto;
@@ -56,14 +97,18 @@
   padding: 0 30px;
 }
 
+
 .Media-crumbs .crumb {
   display: inline-block;
+ 
   margin: 10px;
   padding: 0 30px;
+  
 }
 /* color for nav-link & medai-links  */
 li a {
   color:rgb(19, 39, 220);
+  text-align: center;
  
 }
 .heart {
@@ -76,53 +121,71 @@ li a {
 
 .container {
   display: flex;
-  flex-direction: column;
-  min-width: 100vh;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   font-size: calc(10px + 1vmin);
-
-
-}
-.page-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 350px;
-}
-.page-main section {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 350px;
-  margin: 20px;
-  padding: 20px;
 }
 .page-main img {
-width:80%;
-height:600px;
+width: 100%;
+height: auto;
+justify-content: center;
+border: silver 5px solid;
 }
-.photo-gallery img {
-background-size : cover;
+/* .page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 350px;
+} */
+.page-main section {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  
+  /* box-sizing: borderbox; */
 }
-.photo-gallery img {
-  width:100%;
+/* aligns the first picture */
+
+
+section .text-maker {
+  width:  80%;
   height: 300px;
   display: inline-flexbox;
-  margin : 5px;
+  margin : 25px;
   padding: 15px;
 }
 
-.photo-gallery li {
-  list-style-type: none;
-  display: inline-block;
+/***************** photo gallery ***********************/
+.photo-gallery ul {
+  display: flex;
+  flex-direction: row;
 }
 
+.photo-gallery li {
+ height: 40vh;
+ flex-grow: 1;
+ list-style-type: none;
+}
+.photo-gallery img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit:cover;
+  vertical-align: bottom;
+}
+/**************************** different size********************************************** */
+/* 
 @media screen and (min-width: 768px){
   main-page {
   padding: 90px;
 }
+section .item .text-maker {
+  width: 50%;
+
+
 }
+section .item img {
+max-width: 100%;
+height: auto;
+}
+} */

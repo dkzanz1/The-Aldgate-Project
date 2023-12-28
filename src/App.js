@@ -9,7 +9,12 @@ function App() {
   return (
     <div className="container">
     <div className="App">
+    <div>
      <Logo />
+    </div>
+     <p>
+          First choice!<br></br>The only choice <span className="heart">♥️</span> ALGATE
+      </p>
       <header className="App-header">
       <NaviBar /> 
         {/* need to add video mp4 from linux computer */}
@@ -18,42 +23,50 @@ function App() {
           Your browser does not support the video tag
         </video> */}
       </header>
-      
-     <main className="page-main">
-     <p>
-          First choice!<br></br>The only choice <span className="heart">♥️</span> ALGATE
-      </p>
+      <main className="page-main">
       <div>
-        <section className="photo-grid">
-          <h2>next section 1</h2>
-          
+
+      <h2>Main Photo</h2>
+        <section className="item">
           <img src="../images/building-in-london.jpeg" className="App-picture" alt="" />
+          <div className="text-maker">
+          <h3>Intro text</h3>
           <TextMaker />
+          </div>
         </section>
-      
-        <section className="photo-grid">
-          <h2>next section 2</h2>
+
+        <h2>Next Section 2</h2>
+        <section className="item" >
+          <div className="text-maker">
           <TextMaker />
+          </div>
           <img src="../images/pexels-photo-1106476.jpeg" className="App-picture" alt="" /> 
         </section>
 
-        <section className="photo-grid">
-          <h2>next section 3</h2>
+        <h2>Next Section 3</h2>
+        <section className="item">
+          <div className="text-maker">
           <TextMaker />
+          </div>
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
-        </section>
+        </section >
+
         <Gallery />
-        <section className="photo-gallery">
+
+        <section className="item">
           <div>
            <h2>Something spare</h2>
            </div>
         </section>
 
-        <section className="photo-grid">
-          <h2>next section 4</h2>
+        <h2>Next section 4</h2>
+        <section className="item">
+          <div className="text-maker">
           <TextMaker />
+          </div>
           <img src="../images/pexels-photo-5582597.jpeg" className="App-picture" alt="" />
         </section>
+
         </div>
       </main>
       {/* contact form  */}

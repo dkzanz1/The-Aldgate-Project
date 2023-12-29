@@ -5,24 +5,24 @@ import NaviBar from './components/nav-bar';
 import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';
+import HeroSection from './components/HeroSection';
 function App() {
   return (
     <div className="container">
     <div className="App">
-    <div>
-     <Logo />
-    </div>
-     <p>
-          First choice!<br></br>The only choice <span className="heart">♥️</span> ALGATE
-      </p>
+     
       <header className="App-header">
-      <NaviBar /> 
-        {/* need to add video mp4 from linux computer */}
+      <Logo />
+         {/* need to add video mp4 from linux computer */}
         {/* <video autoPlay muted loop className='App-logo-video'>
           <source src ={process.env.PUBLIC_URL + '/home/paulzolik/react-projects/Algatelogovideo.mp4/Algate.mp4'} type="video/mp4" />
           Your browser does not support the video tag
         </video> */}
+      <NaviBar /> 
+      
+      <HeroSection />
       </header>
+      
       <main className="page-main">
       <div>
 
@@ -44,12 +44,12 @@ function App() {
         </section>
 
         <h2>Next Section 3</h2>
-        <section className="item">
+        <section className="item" >
           <div className="text-maker">
           <TextMaker />
           </div>
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
-        </section >
+        </section>
 
         <Gallery />
 
@@ -71,11 +71,12 @@ function App() {
       </main>
       {/* contact form  */}
       
-      </div> 
-      <footer>
+       
+      <footer className='App-footer'>
       <Footer />  
       </footer>
       {/* container ends*/}
+      </div>
       </div>
   );
 }

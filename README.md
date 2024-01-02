@@ -4,12 +4,14 @@ Its a react project using the following intended Tech:-
 1/M.E.R.N Stack Mongo,Express,React,Node.
 Dependancies 
 "react": "^18.2.0",
+"node": "^21.2.0",
+react "bootstrap": "^5.3.2",
 "lorem-ipsum": "^2.0.8",currently install but not used.
 "name": "codespaces-react",
 Babel 
 JSX
 p
-Principle Layout based on CSS flex-box
+Principle Layout based on react bootstrap 
 *************************************************************
 Note self with regards to github source control updates:-
 To update github add message in message box and press commit then sync.

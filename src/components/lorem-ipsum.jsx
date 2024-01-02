@@ -2,7 +2,7 @@ import React from "react";
 
 function TextMaker () {
     return <>
-    <div classname="text" >
+    <div classname="column" >
        <p>
         Lorem ipsum dolor sit amet,
         Donec lobortis nisl tellus, 

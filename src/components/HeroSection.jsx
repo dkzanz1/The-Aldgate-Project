@@ -1,9 +1,9 @@
 import React from "react";
-import '../HeroSection.css';//css import styles
+// import '../HeroSection.css';//css import styles
 
 const HeroSection = () => {
     return (
-            <div className="hero-container">
+            <div className="container">
                 <div className="hero-background-image">
                 <div className="hero-content">
                     <h1>Algate Fire</h1>

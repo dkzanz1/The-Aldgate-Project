@@ -1,3 +1,4 @@
+import './index.css';
 import './App.css';
 // import video from "./videos";
 import Logo from './components/logo';
@@ -6,6 +7,8 @@ import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
+
+
 function App() {
   return (
     <div className="container">

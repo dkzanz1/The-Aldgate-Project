@@ -3,6 +3,7 @@ import React from "react";
 
 function NavBar() {
     return<>
+    {/* styled with bootstrap */}
             <nav className="App-NaviBar-crumbs">
                 <ul className="nav nav-pills">
                         {/* hamburger & links */}

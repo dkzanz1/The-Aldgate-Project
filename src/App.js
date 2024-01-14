@@ -1,13 +1,17 @@
 // import './App.css';
+// index.js or your component file
+
 // import video from "./videos";
 import Logo from './components/logo';
-import NaviBar from './components/nav-bar';
+// import NaviBar from './components/nav-bar';
 import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
 import Counter from './components/Counter';
 import NavBar from './components/Navbar';
+import Section from './components/Section';
+
 function App() {
   return (
     <div className="container">
@@ -30,7 +34,7 @@ function App() {
       
       <main className="page-main">
       <div>
-
+      <Section />
       <h2>Main Photo</h2>
         <section className="container-fluid">
           <img src="../images/building-in-london.jpeg" className="column" alt="" />

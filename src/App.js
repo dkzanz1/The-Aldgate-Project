@@ -1,12 +1,22 @@
+<<<<<<< HEAD
 
+=======
+import './index.css';
+import './App.css';
+// import video from "./videos";
+>>>>>>> bb134c3bc9c7676c62b51d34d0d891989cc24e1d
 import Logo from './components/logo';
 import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
+<<<<<<< HEAD
 import Counter from './components/Counter';
 import NavBar from './components/Navbar';
 import Section from './components/Section';
+=======
+
+>>>>>>> bb134c3bc9c7676c62b51d34d0d891989cc24e1d
 
 function App() {
   return (

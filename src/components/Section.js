@@ -3,24 +3,29 @@ import TextMaker from './lorem-ipsum';
 
 
 const Section = () => {
-    return<>
+    return(
+    <>
+    <div className='jumbotron text-center'>
     <h2>Section component</h2>
+    </div>
         <div className="container">
             <div className="row">
-                <section className='col-sm-12 col-md-6 order-md-1'>
+              {/* Image on the left, text on the right (medium and larger screens) */}
+                <section className='col-md-8  order-md-1 '>
                     <img 
                         src="../images/building-in-london.jpeg"
-                        alt="responsive"
-                        className="img-fliud"
+                        alt="Responsive"
+                        className="img-fliud" 
                     />
                 </section>
-                <h3>Intro text</h3>
-                <section className='col-sm-12 col-md-6 d-flex align-items-center justify-content-center order-md-2 '>
+                <section className='col-md-4  order-md-2 '>
+                <h3 className='text-center'>Intro text</h3>
                     <TextMaker />
                 </section>
             </div>
         </div>
     </>
+    );
 };
 
 export default Section;

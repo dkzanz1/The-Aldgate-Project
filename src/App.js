@@ -1,9 +1,5 @@
-// import './App.css';
-// index.js or your component file
 
-// import video from "./videos";
 import Logo from './components/logo';
-// import NaviBar from './components/nav-bar';
 import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';

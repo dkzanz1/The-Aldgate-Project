@@ -1,22 +1,13 @@
-<<<<<<< HEAD
 
-=======
-import './index.css';
-import './App.css';
 // import video from "./videos";
->>>>>>> bb134c3bc9c7676c62b51d34d0d891989cc24e1d
-import Logo from './components/logo';
+import NavBar from './components/Navbar';
+// import Logo from './components/logo';
 import TextMaker from './components/lorem-ipsum';
 import Gallery from './components/gallery';
 import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
-<<<<<<< HEAD
 import Counter from './components/Counter';
-import NavBar from './components/Navbar';
 import Section from './components/Section';
-=======
-
->>>>>>> bb134c3bc9c7676c62b51d34d0d891989cc24e1d
 
 function App() {
   return (
@@ -24,31 +15,22 @@ function App() {
     <div className="App">
      
       <header className="App-header">
-      <Logo />
-     
-         {/* need to add video mp4 from linux computer */}
-        {/* <video autoPlay muted loop className='App-logo-video'>
-          <source src ={process.env.PUBLIC_URL + '/home/paulzolik/react-projects/Algatelogovideo.mp4/Algate.mp4'} type="video/mp4" />
-          Your browser does not support the video tag
-        </video> */}
+      {/* <Logo /> */}
       {/* <NaviBar />  */}
       <NavBar />
-      
       <HeroSection />
-      
       </header>
-      
       <main className="page-main">
       <div>
       <Section />
-      <h2>Main Photo</h2>
-        <section className="container-fluid">
-          <img src="../images/building-in-london.jpeg" className="column" alt="" />
-          <div className="column">
-          <h3>Intro text</h3>
-          <TextMaker />
-          </div>
-        </section>
+        <h2>Main Photo</h2>
+          <section className="container-fluid">
+            <img src="../images/building-in-london.jpeg" className="column" alt="" />
+            <div className="column">
+            <h3>Intro text</h3>
+            <TextMaker />
+            </div>
+          </section>
 
         <h2>Next Section 2</h2>
         <section className="item" >

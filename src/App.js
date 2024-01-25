@@ -49,7 +49,7 @@ function App() {
         </section>
 
         <Gallery />
-
+        <Section />
         <section className="item">
           <div>
            <h2>Something spare</h2>

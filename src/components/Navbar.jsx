@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col, Nav, NavDropdown, Button } from "react-bootstrap";
 import Logo from "./logo";
-
+//created using react-strap
 function NavBar() {
-    return<>(
+    return<>
     {/* styled with bootstrap */}
     <Container>
         <Row className="justify-content-between">
@@ -36,7 +36,7 @@ function NavBar() {
         </Row>
     </Container>
    
-    ); 
+    
     </> 
     }
 

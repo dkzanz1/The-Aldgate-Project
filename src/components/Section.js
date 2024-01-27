@@ -1,30 +1,35 @@
 import React from 'react';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import TextMaker from './lorem-ipsum';
+import buildingImage from './public/images/building-in-london.jpeg';
 
 
 const Section = () => {
-    return(
-    <>
-    <div className='jumbotron text-center'>
-    <h2>Section component</h2>
-    </div>
-        <div className="container">
-            <div className="row">
-              {/* Image on the left, text on the right (medium and larger screens) */}
-                <section className='col-md-8  order-md-1 '>
-                    <img 
-                        src="../images/building-in-london.jpeg"
-                        alt="Responsive"
-                        className="img-fliud" 
-                    />
-                </section>
-                <section className='col-md-4  order-md-2 '>
-                <h3 className='text-center'>Intro text</h3>
-                    <TextMaker />
-                </section>
+    return (
+        <>
+            <div className='jumbotron text-center'>
+            <h2>Section component</h2>
             </div>
-        </div>
-    </>
+            <Container>
+                <Row className="justify-content-center align-items-center">
+                    {/* Image on the left, text on the right (medium and larger screens) */}
+                        <Col md={8} className='order-md-1'>
+                            <Image 
+                                src={buildingImage}
+                                alt="Responsive"
+                                fluid
+                            />
+                        </Col>
+                        {/* text column */}
+                        <Col md={4} className="order-md-2">
+                            <div className='text-center'>
+                                <h3 >Intro text</h3>
+                                <TextMaker />
+                            </div>
+                        </Col>
+                </Row>
+            </Container >
+        </>
     );
 };
 

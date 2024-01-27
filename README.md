@@ -1,4 +1,4 @@
-Project created using github generated codespace
+Project created using github generated thru codespace
 Its a react project using the following intended Tech:-
 
 1/M.E.R.N Stack Mongo,Express,React,Node.
@@ -16,6 +16,9 @@ Principle Layout based on react bootstrap
 Note self with regards to github source control updates:-
 To update github add message in message box and press commit then sync.
 *************************************************************
+Mobile navbar styles BUILT with react-bootstrap components
+
+******************
 
 # GitHub Codespaces ♥️ React
 

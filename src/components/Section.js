@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import TextMaker from './lorem-ipsum';
-import buildingImage from './public/images/building-in-london.jpeg';
+import buildingImage from './building-in-london.jpeg';
 
 
 const Section = () => {

@@ -8,6 +8,7 @@ import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
 import Counter from './components/Counter';
 import Section from './components/Section';
+import MakeContact from './components/makeContact';
 
 
 function App() {
@@ -68,7 +69,7 @@ function App() {
         </div>
       </main>
       {/* contact form  */}
-      
+      <MakeContact />
        
       <footer className='App-footer'>
       <Footer />  

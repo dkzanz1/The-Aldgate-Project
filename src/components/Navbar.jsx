@@ -9,7 +9,7 @@ function NavBar() {
         <Container>
             <Navbar.Brand href="#home">
                 <Logo />
-                <h1>Aldgate Fire</h1>
+                
             </Navbar.Brand>    
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav"  className="justify-content-end" >
@@ -28,6 +28,7 @@ function NavBar() {
                         <Nav.Link href="/">Projects</Nav.Link>
                         </Nav.Item> 
                         <Button variant="outline-primary">Get in Touch</Button>
+                        <Button  href="/">Request a quote</Button>
                     </Nav>
                 </Navbar.Collapse>
         </Container>

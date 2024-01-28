@@ -18,6 +18,7 @@ const Section = () => {
                                 src={buildingImage}
                                 alt="Responsive"
                                 fluid
+                              
                             />
                         </Col>
                         {/* text column */}

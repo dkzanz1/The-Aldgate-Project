@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Col, Row, Button} from "react-bootstrap";
-import HeroBackground from './pexels-photo-2762553.jpeg' 
-
+import HeroBackground from './city.jpeg' 
+// created using react-bootstrap
 const HeroSection = () => {
     return (
         <div
@@ -17,7 +17,7 @@ const HeroSection = () => {
             alignItems: 'center',
             justifyContent: "center",
             textAlign: "center",
-            color: "white",
+            color: "gold",
     }}
         >
         <Container fluid >
@@ -31,7 +31,7 @@ const HeroSection = () => {
                     <h3>Specialist in the design and install of High risers and sprinkler systems</h3>
                 </Col>
             </Row>  
-            <Button variant="outline-light style={{ opacity: 0.7 }}">Call to action</Button>
+            <Button variant="outline-light style={{ opacity: 1.9 }}">Call to action</Button>
             
         </Container>
         </div>

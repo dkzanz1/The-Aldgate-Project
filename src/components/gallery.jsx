@@ -1,9 +1,9 @@
 import React from "react";
-import   {Container, Carousel, Row, Col}  from 'react-bootstrap';
+import {Container, Carousel, Row, Col}  from 'react-bootstrap';
 
 
 function GalleryCarousel() {
-    return <>(
+    return <>
     <Container>
       <h1>Gallery</h1>
         <Row>
@@ -52,7 +52,7 @@ function GalleryCarousel() {
         </Col>
       </Row>
     </Container>
-    );</> 
+    </> 
   }
 
 export default GalleryCarousel;

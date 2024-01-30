@@ -3,7 +3,7 @@ import {Form, Button} from 'react-bootstrap';
 
 function MakeContact(){
     return<>
-        <h1>Contact Form </h1>
+        <h6>Contact Form </h6>
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>

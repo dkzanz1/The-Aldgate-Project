@@ -4,25 +4,28 @@ import TextMaker from './lorem-ipsum';
 import buildingImage from './building-in-london.jpeg';
 
 
+
+
 const Section = () => {
     return (
         <>
-            <div className='jumbotron text-center'>
+            <div>
             <h2>Section component</h2>
             </div>
             <Container>
                 <Row className="justify-content-center align-items-center">
                     {/* Image on the left, text on the right (medium and larger screens) */}
-                        <Col md={8} className='order-md-1'>
+                        <Col md={6} className='mb-4 mb-md-0'>
                             <Image 
-                                src={buildingImage}
+                                src={buildingImage} 
                                 alt="Responsive"
                                 fluid
-                              
+                                // height="50vh"
+                                width="100%"
                             />
                         </Col>
                         {/* text column */}
-                        <Col md={4} className="order-md-2">
+                        <Col md={6}>
                             <div className='text-center'>
                                 <h3 >Intro text</h3>
                                 <TextMaker />

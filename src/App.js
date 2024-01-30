@@ -1,21 +1,18 @@
 
-// import video from "./videos";
+import React from "react";
+import {Container, Row, Col, Image} from 'react-bootstrap';
 import NavBar from './components/Navbar';
-// import Logo from './components/logo';
 import TextMaker from './components/lorem-ipsum';
-import Gallery from './components/gallery';
-import Footer from './components/footer';
+import GalleryCarousel from './components/gallery';
+import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
-import Counter from './components/Counter';
 import Section from './components/Section';
-import MakeContact from './components/makeContact';
+
 
 
 function App() {
   return (
-    <div className="container">
     <div className="App">
-     
       <header className="App-header">
       {/* <Logo /> */}
       {/* <NaviBar />  */}
@@ -23,61 +20,85 @@ function App() {
       <HeroSection />
       </header>
       <main className="page-main">
-      <div>
-      <Section />
-        <h2>Main Photo</h2>
-          <section className="container-fluid">
-            <img src="../images/building-in-london.jpeg" className="column" alt="" />
-            <div className="column">
-            <h3>Intro text</h3>
+        <Container>
+          <Section />
+            <Row>
+              <h2>Main Photo</h2>
+              <Col className="md-4 mb-md-0">
+                  <Image src="../images/building-in-london.jpeg" 
+                  className="column" 
+                  alt="" 
+                  height="400px" 
+                  width="100%" 
+                  />
+                  <div className="column">
+                    <h3>Intro text</h3>
+                    <TextMaker />
+                  </div>
+              </Col>
+              <Col md={6}>
+                <h2>Next Section 2</h2>
+                 <div className="item" >
+                    <img
+                    src="../images/pexels-photo-1106476.jpeg"
+                    className="App-picture" 
+                    alt="" 
+                    width="100%"
+                    />
+                    <div className="text-maker">
+                    <TextMaker />
+                    </div>
+                  </div>
+              </Col>
+              <Col md={6}>
+          <h2>Next Section 3</h2>
+          <div className="item" >
+            <div className="text-maker">
             <TextMaker />
             </div>
-          </section>
-
-        <h2>Next Section 2</h2>
-        <section className="item" >
-          <div className="text-maker">
-          <TextMaker />
+            <img src="../images/pexels-photo-5292195.webp"
+             className="App-picture" 
+             alt=""
+             width="100%"
+             />
           </div>
-          <img src="../images/pexels-photo-1106476.jpeg" className="App-picture" alt="" /> 
-        </section>
+          </Col>
 
-        <h2>Next Section 3</h2>
-        <section className="item" >
-          <div className="text-maker">
-          <TextMaker />
+        
+          <Section />
+          <div className="item"  width="100%" >
+            <div>
+            <h2>Something spare</h2>
+            </div>
           </div>
-          <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
-        </section>
-
-        <Gallery />
-        <Section />
-        <section className="item">
-          <div>
-           <h2>Something spare</h2>
-           </div>
-        </section>
-
-        <h2>Next section 4</h2>
-        <section className="item">
-          <div className="text-maker">
-          <TextMaker />
-          </div>
-          <img src="../images/pexels-photo-5582597.jpeg" className="App-picture" alt="" />
-        </section>
-
-        </div>
+          <Col md={6}>
+            <h2>Next section 4</h2>
+            <div className="item">
+                <img src="../images/pexels-photo-5582597.jpeg"
+                className="App-picture" 
+                alt="" 
+                width="100%"
+                />
+              <div className="text-maker">
+              <TextMaker />
+              </div>
+            </div>
+          </Col>
+          </Row>
+        </Container>
+          <GalleryCarousel />
+          
+          
       </main>
-      {/* contact form  */}
-      <MakeContact />
+     
        
       <footer className='App-footer'>
-      <Footer />  
+          <Footer />  
       </footer>
-      <Counter />
+   
       {/* container ends*/}
       </div>
-      </div>
+     
   );
 }
 

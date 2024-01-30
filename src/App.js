@@ -4,7 +4,7 @@ import NavBar from './components/Navbar';
 // import Logo from './components/logo';
 import TextMaker from './components/lorem-ipsum';
 import GalleryCarousel from './components/gallery';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Counter from './components/Counter';
 import Section from './components/Section';

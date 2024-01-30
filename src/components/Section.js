@@ -15,9 +15,11 @@ const Section = () => {
                     {/* Image on the left, text on the right (medium and larger screens) */}
                         <Col md={8} className='order-md-1'>
                             <Image 
-                                src={buildingImage}
+                                src={buildingImage} 
                                 alt="Responsive"
                                 fluid
+                                // height="50vh"
+                                width="500vw"
                               
                             />
                         </Col>

@@ -3,7 +3,7 @@
 import NavBar from './components/Navbar';
 // import Logo from './components/logo';
 import TextMaker from './components/lorem-ipsum';
-import Gallery from './components/gallery';
+import GalleryCarousel from './components/gallery';
 import Footer from './components/footer';
 import HeroSection from './components/HeroSection';
 import Counter from './components/Counter';
@@ -50,7 +50,7 @@ function App() {
           <img src="../images/pexels-photo-5292195.webp" className="App-picture" alt="" />
         </section>
 
-        <Gallery />
+       
         <Section />
         <section className="item">
           <div>
@@ -65,7 +65,7 @@ function App() {
           </div>
           <img src="../images/pexels-photo-5582597.jpeg" className="App-picture" alt="" />
         </section>
-
+        <GalleryCarousel />
         </div>
       </main>
       {/* contact form  */}

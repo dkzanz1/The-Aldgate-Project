@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, NavDropdown, Button, Navbar} from "react-bootstrap";
+import { Container, Nav, NavDropdown, Button, Navbar, Row, Col} from "react-bootstrap";
 import Logo from "./logo";
 
 function NavBar() {
@@ -24,11 +24,15 @@ function NavBar() {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item href="/">Separate Action</NavDropdown.Item>
                                 </NavDropdown>
-                            <Nav.Item>                           
-                        <Nav.Link href="/">Projects</Nav.Link>
-                        </Nav.Item> 
-                        <Button variant="outline-primary">Get in Touch</Button>
-                        <Button  href="/">Request a quote</Button>
+                        <Nav.Link>
+                            <Row className="button-group">
+                            <Col>
+                                <Button variant="outline-primary">Get in Touch</Button>
+                            
+                                <Button variant="outline-primary">Request a quote</Button>
+                            </Col>    
+                        </Row>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
         </Container>

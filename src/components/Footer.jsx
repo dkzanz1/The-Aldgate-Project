@@ -12,8 +12,8 @@ import "../styles/footer.css";
 function Footer() {
     return<>
       <footer className="mt-5" >
-        <Container fluid={true}>
-          <Row className="border-top justify-content-between p-5">
+        <Container >
+          <Row className="border-top justify-content-center p-5">
             <Col md={4} sm={12}>
               <div className="footer-section">
                 <h5>About us</h5>
@@ -44,9 +44,9 @@ function Footer() {
             </div>
            
             </Col>
-            <Col md={{ span: 6, offset: 3}} sm={12}>
-            <div className="footer-section text-center">
-              <h6>&copy;Aldgate group 2024.All rights reserved.</h6>
+            <Col md={{ span: 8}} sm={12}>
+              <div className="footer-section text-center">
+                <h6>&copy;Aldgate group 2024.All rights reserved.</h6>
               </div>
             </Col>
           </Row>

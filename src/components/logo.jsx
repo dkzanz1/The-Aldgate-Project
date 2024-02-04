@@ -7,8 +7,8 @@ function Logo() {
                 <img src="../images/ALDGATE.jpg"
                  className="App-logo" 
                  alt="logo" 
-                 width="150" 
-                 height="130" 
+                 width="200" 
+                 height="180" 
                  />
             </div>
          </>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'; 
 import "../styles/footer.css";
 
-import MakeContact from '../components/makeContact';
+
 
 
 
@@ -37,11 +37,12 @@ function Footer() {
             <div className="footer-section">
               <h5>Contact us</h5>
                {/* contact form  */}
-                <MakeContact />
+                
               <p>123 Street, City, County</p>
               <p>info@example.com</p>
               <h6>Call us direct <a href="tel:+44 123-456-789">123-456-789</a></h6>
             </div>
+           
             </Col>
             <Col md={{ span: 6, offset: 3}} sm={12}>
             <div className="footer-section text-center">

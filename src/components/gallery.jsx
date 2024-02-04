@@ -15,7 +15,7 @@ function GalleryCarousel() {
                     src="images/pexels-photo-1106476.jpeg"
                     alt="First slide" 
                     height ="400"
-                    width="400"
+                    width="200"
                   />
                   <Carousel.Caption>
                     <h3>First Slide Label</h3>
@@ -28,7 +28,7 @@ function GalleryCarousel() {
                   src="images/pexels-photo-1502941 (1).jpeg"
                   alt="Second slide" 
                   height ="400"
-                  width="400"
+                  width="200"
                 />
                 <Carousel.Caption>
                   <h3>Second Slide Label</h3>
@@ -41,7 +41,7 @@ function GalleryCarousel() {
                   src="images/pexels-photo-7642088.jpeg"
                   alt="Third Slide" 
                   height ="400"
-                  width="400"
+                  width="200"
                 />
                 <Carousel.Caption>
                   <h3>Third Slide Label</h3>

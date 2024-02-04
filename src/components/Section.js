@@ -21,7 +21,7 @@ const Section = () => {
                                 alt="Responsive"
                                 fluid
                                 // height="50vh"
-                                width="100%"
+                                width="80%"
                             />
                         </Col>
                         {/* text column */}

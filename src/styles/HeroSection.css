@@ -1,3 +1,4 @@
+/* currently not applied to hero */
 .hero-container {
     display: flex;
     position: relative;
@@ -26,7 +27,7 @@
 .hero-content {
     position: absolute;
     top: 45%;
-    left: 50%;
+    /* left: 50%; */
     transform: translate(-50%, -50%);
     color: #fff;
     text-align: center;

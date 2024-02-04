@@ -1,8 +1,9 @@
-/* moves the nav item to the left of screen on larger screens i belieive */
-@media(min-width: 992px) {
-    .navbar-nav {
-        width: auto;
-        justify-content: flex-end;
-        color: red;
-    }
+
+/* currently not applied  */
+/* navbar.css */
+
+.custom-navbar .nav-link {
+    color: gold !important; /* Set the color of all nav links to gold */
 }
+
+/* Add any other custom styles for the navbar here */

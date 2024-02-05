@@ -16,14 +16,14 @@ const Section = () => {
                 <Row className="justify-content-center align-items-center">
                     {/* Image on the left, text on the right (medium and larger screens) */}
                         <Col md={4} className='mb-4 mb-md-0'>
-                          <Image 
+                          {/* <Image 
                                 src={buildingImage} 
                                 alt="Responsive"
                                 fluid
                                 // height="50vh"
                                 width="100%"
                                
-                            />
+                            /> */}
                            
                         </Col>
                         {/* text column */}

@@ -10,25 +10,28 @@ const Section = () => {
     return (
         <>
             <div>
-            <h2>Section component</h2>
+            <h2 className="text-center">Section component here</h2>
             </div>
             <Container>
                 <Row className="justify-content-center align-items-center">
                     {/* Image on the left, text on the right (medium and larger screens) */}
-                        <Col md={6} className='mb-4 mb-md-0'>
-                            <Image 
+                        <Col md={4} className='mb-4 mb-md-0'>
+                          <Image 
                                 src={buildingImage} 
                                 alt="Responsive"
                                 fluid
                                 // height="50vh"
-                                width="80%"
+                                width="100%"
+                               
                             />
+                           
                         </Col>
                         {/* text column */}
-                        <Col md={6}>
+                        <Col md={8}>
                             <div className='text-center'>
-                                <h3 >Intro text</h3>
+                                <h3>Intro text</h3>
                                 <TextMaker />
+                          
                             </div>
                         </Col>
                 </Row>

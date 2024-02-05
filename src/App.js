@@ -3,7 +3,7 @@ import React from "react";
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import NavBar from './components/Navbar';
 import TextMaker from './components/lorem-ipsum';
-import GalleryCarousel from './components/gallery';
+
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
 import Section from './components/Section';
@@ -16,26 +16,31 @@ function App() {
       <header >
       <NavBar />
       <HeroSection />
+     
       </header>
       <main className="page-main">
         <Container>
-          <Section />
-            <Row>
+          <Section/>
 
-              <h2>Main Photo</h2>
-              <Col className="md-4 mb-md-0">
-                  <Image src="../images/building-in-london.jpeg" 
-                  className="column" 
-                  alt="" 
-                  height="300px" 
-                  width="100%" 
-                  />
-                  <div className="column">
-                    <h3>Intro text</h3>
-                    <TextMaker />
-                  </div>
+            <Row >
+              <Col>
+                <h2 className="text-center">Main Photo</h2>
+                <Col>
+                    <Image src="../images/building-in-london.jpeg" 
+                    className="column" 
+                    alt="" 
+                    height="400px" 
+                    width="100%" 
+                    />
+                    <div className="column">
+                      <h3 text-align="center">Intro text</h3>
+                      <TextMaker />
+                    </div>
+                </Col>
               </Col>
+            </Row>
 
+            <Row>
               <Col md={6}>
                 <h2>Next Section 2</h2>
                  <div className="item" >
@@ -83,7 +88,7 @@ function App() {
           </Col>
           </Row>
         </Container>
-          <GalleryCarousel />
+       
       </main>
       <MakeContact />
       <footer className='App-footer'>

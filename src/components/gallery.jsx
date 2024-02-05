@@ -4,22 +4,21 @@ import {Container, Carousel, Row, Col}  from 'react-bootstrap';
 
 function GalleryCarousel() {
     return <>
-    <Container>
-      <h1>Gallery</h1>
+   
+    <Container fluid style={{ borderBottom: '80px solid black' }}>
         <Row>
           <Col>
-            <Carousel>
+            <Carousel style={{height: '70vh'}}>
               <Carousel.Item>
                   <img 
                     className="d-block w-100"
                     src="images/pexels-photo-1106476.jpeg"
                     alt="First slide" 
-                    height ="400"
-                    width="200"
+                    style={{ height: '70vh', objectFit: 'cover' }}
                   />
                   <Carousel.Caption>
-                    <h3>First Slide Label</h3>
-                    <p>gbfghfghfnmmmgmgmgmm</p>
+                    <h3>FULL SYSTEM INSTALLATION</h3>
+                    <p>Complient to the British standard Regulations</p>
                   </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -27,12 +26,12 @@ function GalleryCarousel() {
                   className="d-block w-100"
                   src="images/pexels-photo-1502941 (1).jpeg"
                   alt="Second slide" 
-                  height ="400"
-                  width="200"
+                  style={{ height: '70vh', objectFit: 'cover' }}
+                 
                 />
                 <Carousel.Caption>
-                  <h3>Second Slide Label</h3>
-                  <p>gbfghfghfnmmmgmgmgmm</p>
+                  <h3>PLANNING,DESIGN & INSTALL</h3>
+                  <p>Our qualified team is ready to help</p>
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -40,12 +39,11 @@ function GalleryCarousel() {
                   className="d-block w-100"
                   src="images/pexels-photo-7642088.jpeg"
                   alt="Third Slide" 
-                  height ="400"
-                  width="200"
+                  style={{ height: '70vh', objectFit: 'cover' }}
                 />
                 <Carousel.Caption>
-                  <h3>Third Slide Label</h3>
-                  <p>gbfghfghfnmmmgmgmgmm</p>
+                  <h3>EVALUATION,CORRECTION AND COMPLIENT CHECK</h3>
+                  <p>Experience technicians</p>
                 </Carousel.Caption>
             </Carousel.Item>
           </Carousel>

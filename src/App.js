@@ -3,9 +3,9 @@ import React from "react";
 import {Container, Row, Col, Image} from 'react-bootstrap';
 import NavBar from './components/Navbar';
 import TextMaker from './components/lorem-ipsum';
-
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
+import CreateCard from "./components/card";
 import Section from './components/Section';
 import MakeContact from './components/makeContact';
 
@@ -16,7 +16,12 @@ function App() {
       <header >
       <NavBar />
       <HeroSection />
-     
+          <div style={{ display:'flex' }}>
+            <CreateCard />
+            <CreateCard />
+            <CreateCard />
+            <CreateCard />
+        </div>
       </header>
       <main className="page-main">
         <Container>
@@ -61,7 +66,7 @@ function App() {
           <h2>Next Section 3</h2>
           <div className="item" >
             <div className="text-maker">
-            <TextMaker />
+            
             </div>
             <img src="../images/pexels-photo-5292195.webp"
              className="App-picture" 
@@ -69,6 +74,7 @@ function App() {
              height="300px" 
              width="100%"
              />
+             <TextMaker />
           </div>
           </Col>
           <Section />
@@ -86,11 +92,13 @@ function App() {
               </div>
             </div>
           </Col>
+          <MakeContact />
           </Row>
+
         </Container>
        
       </main>
-      <MakeContact />
+     
       <footer className='App-footer'>
           <Footer />  
       </footer>

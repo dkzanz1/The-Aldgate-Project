@@ -37,12 +37,12 @@ function GalleryCarousel() {
               <Carousel.Item>
                 <img 
                   className="d-block w-100"
-                  src="images/pexels-photo-7642088.jpeg"
+                  src="images/pexels-photo-2225213.jpeg"
                   alt="Third Slide" 
                   style={{ height: '70vh', objectFit: 'cover' }}
                 />
                 <Carousel.Caption>
-                  <h3>EVALUATION,CORRECTION AND COMPLIENT CHECK</h3>
+                  <h3>EVALUATION,CORRECTION AND COMPLIENCE CHECKS</h3>
                   <p>Experience technicians</p>
                 </Carousel.Caption>
             </Carousel.Item>

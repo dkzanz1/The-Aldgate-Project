@@ -1,27 +1,37 @@
+import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import  cards from './cardData';
 
+ 
 
-function CreateCard() {
-    return<>
+// creat each card content using the array below
+const CreateCard = () => {
+
+    return(
         <Container>
-            <Row>
-                <Col lg={4} md={6} className="mb-4 mt-30">
-                <Card style={{ width: '18rem'}}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>The title</Card.Title>
-                            <Card.Text>
-                            A quick example some text
-                            </Card.Text>
-                            <Card.Link>Card Link</Card.Link>
-                            <Card.Link>Another Card Link</Card.Link>
-                            <Button variant='primary'> go somewhere</Button>
-                        </Card.Body>
-                </Card>
+            <Row className ="justify-content-end mt-5">
+                <Col xs={12} md={12} >
+                    <h3>Services</h3>
+                    <h6>-:The Services  we provide:-</h6>
                 </Col>
             </Row>
+           
+            <Row className="justify-content-center">
+            {cards.map(cards => (
+                        <Col key={cards.id} lg={4} md={6} sm={12} className="mb-4">  
+                            <Card style={{ backgroundColor: cards.bgcolor, textColor: cards.tcolor}}>
+                                <Card.Img variant="top" src={cards.image}style={{ objectFit: 'cover', height: '200px'  }}/>
+                                    <Card.Body>
+                                    <Card.Title style={{ color: cards.titleColor }}>{cards.title}</Card.Title>
+                                        <Card.Text style={{ color: cards.textColor }}>{cards.content}</Card.Text>
+                                        <Button variant='primary'> go somewhere</Button>
+                                    </Card.Body>
+                            </Card>
+                        </Col>
+                    ))} 
+            </Row>
         </Container>
-    </>
+    );
 }
 export default CreateCard;

@@ -16,17 +16,16 @@ function App() {
       <header >
       <NavBar />
       <HeroSection />
-          <div style={{ display:'flex' }}>
-            <CreateCard />
-            <CreateCard />
-            <CreateCard />
-            <CreateCard />
-        </div>
       </header>
       <main className="page-main">
-        <Container>
-          <Section/>
 
+      <Container>
+        <div style={{ display:'flex' }} className="text-center">
+          <CreateCard />
+        </div>
+    
+       
+          <Section/>
             <Row >
               <Col>
                 <h2 className="text-center">Main Photo</h2>
@@ -78,23 +77,8 @@ function App() {
           </div>
           </Col>
           <Section />
-       
-          <Col md={6}>
-            <h2>Next section 4</h2>
-            <div className="item">
-                <img src="../images/pexels-photo-5582597.jpeg"
-                className="App-picture" 
-                alt="" 
-                width="100%"
-                />
-              <div className="text-maker">
-              <TextMaker />
-              </div>
-            </div>
-          </Col>
           <MakeContact />
           </Row>
-
         </Container>
        
       </main>

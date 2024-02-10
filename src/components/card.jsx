@@ -9,11 +9,12 @@ import  cards from './cardData';
 const CreateCard = () => {
 
     return(
-        <Container>
-            <Row className ="justify-content-end mt-5">
-                <Col xs={12} md={12} >
+        <Container fluid>
+          
+            <Row className="justify-content-center mt-5"> {/* Change justify-content-end to justify-content-center */}
+                <Col xs={12} md={12} lg={12} className="text-center"> {/* Add text-center class */}
                     <h3>Services</h3>
-                    <h6>-:The Services  we provide:-</h6>
+                    <h6>The Services we provide</h6>
                 </Col>
             </Row>
            

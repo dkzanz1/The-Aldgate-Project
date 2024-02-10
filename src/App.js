@@ -16,15 +16,16 @@ function App() {
       <header >
       <NavBar />
       <HeroSection />
-    <div style={{ display:'flex' }} className="text-center">
-   
-      <CreateCard />
-    </div>
       </header>
       <main className="page-main">
-        <Container>
-          <Section/>
 
+      <Container>
+        <div style={{ display:'flex' }} className="text-center">
+          <CreateCard />
+        </div>
+    
+       
+          <Section/>
             <Row >
               <Col>
                 <h2 className="text-center">Main Photo</h2>
